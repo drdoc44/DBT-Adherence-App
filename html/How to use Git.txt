@@ -1,0 +1,31 @@
+Steps to edit repo
+0. Install git for your system
+	-install url: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+	-configure your credentials
+	-run command 'git config --global user.name "<Your Name>"'
+	-run command 'git config --global user.email "<Your Email>"'
+
+1. Clone repo from github into desired directory
+	-use the url from the main github repo page under the green 'Code' button near the upper right
+	-use command prompt to navigate to desired directory where you want project to be stored on your computer
+	-run command 'git clone <URL>' w/o the braces. this will automatically clone all the code from that repo into the current directory
+	-NOTE: you only ever need to do this at the beginning of a project.
+
+2. Make changes needed to the files
+	-this includes changing existing files, creating new ones, deleting existing ones, and changing the directory structure.
+
+3. Add your changes to staging
+	-Changing a file will mark it as tracked. Run command 'git status' to see what files were changed.
+	-Run command 'git add --all' to have all the changes you made be marked as ready to be pushed.
+	-alternatively, you can run 'git add <filename>' to add specific files and exclude others.
+	-Run command 'git commit -m "<message>"' to commit your files to your local repository. message should be a brief summary about what change you made.
+
+4. Push your code to Github
+	-Run command 'git push' to push all committed changes to the GitHub branch. 
+	-This will override the current branch we're working on and your changes will now appear on Github.
+
+5. Updating your local files from Github
+	-If a change was made to Github by someone else, the files you have on your computer won't match the Github anymore.
+	-To solve this, run command 'git pull' in your local directory
+	-This will automatically pull any new code down from Github. It will override any files you have, so be careful not to delete any changes you have pending.
+	-It's recommended you run 'git pull' everytime you start working in case anything has changed.
